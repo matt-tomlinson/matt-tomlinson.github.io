@@ -1,0 +1,20 @@
+image: python:3.5.1
+
+pipelines:
+  branches:
+    master:
+      - step:
+          # set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY as environment variables
+          name: Deploy to S3
+          deployment: test   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: atlassian/pipelines-awscli
+          script:
+            - aws s3 sync --delete . s3://mattcomputerengineer.com
+            #- apt-get update && apt-get install -y python-dev
+            #- python get-pip.py
+            #- pip install awscli
+            #- pip install boto3==1.3.0 # required for s3_upload.py
+            #- python s3_upload.py mattcomputerengineer.com MyWebpage/ bucket_key # run the deployment script
+            
+
