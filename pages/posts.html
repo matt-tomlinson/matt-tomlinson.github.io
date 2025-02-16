@@ -1,2 +1,19 @@
-<p>Posts Page</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif" alt="Your GIF">
+<div class="post">
+    <h2>Fetching Data with Fetch API</h2>
+    <p class="date">Published on February 16, 2025</p>
+    <p>How I am using the Fetch API to load the pages on my site:</p>
+    <pre>
+        <code class="language-javascript">
+        fetch(`/pages/${pageId}.html`).then((response) => response.text()).then((data) => {
+            document.getElementById("page-header").innerHTML = `> ${pageId}`;
+            document.getElementById("main-content").innerHTML = data;
+        });
+        </code>
+    </pre>
+</div>
+
+<div class="post">
+    <h2>Posts Launch</h2>
+    <p class="date">February 16, 2025</p>
+    <p>My posts page has launched! 🚀</p>
+</div>

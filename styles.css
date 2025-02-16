@@ -50,3 +50,28 @@ footer {
     color: #EEEEEE;
     text-decoration: none;
 }
+
+.post {
+  color: #EEEEEE;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post h2 {
+  color: #333;
+}
+
+.post .date {
+  color: #666;
+  font-size: 14px;
+}
+
+.post pre {
+  background: #282c34;
+  padding: 10px;
+  border-radius: 5px;
+}

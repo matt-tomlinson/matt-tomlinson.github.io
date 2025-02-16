@@ -19,8 +19,8 @@ function initializeHeaderLinks() {
 
 function loadPageDataById(pageId) {
     fetch(`/pages/${pageId}.html`).then((response) => response.text()).then((data) => {
-        document.getElementById("main-content").innerHTML = data;
         document.getElementById("page-header").innerHTML = `> ${pageId}`;
+        document.getElementById("main-content").innerHTML = data;
     });
 }
 
