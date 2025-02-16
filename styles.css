@@ -1,3 +1,4 @@
+/* Main Styles */
 body {
   background-color: #222831;
   color: #EEEEEE;
@@ -51,6 +52,7 @@ footer {
     text-decoration: none;
 }
 
+/* Posts Styles */
 .post {
   color: #EEEEEE;
   border-bottom: 1px solid #ddd;
@@ -68,4 +70,11 @@ footer {
 .post .date {
   color: #979797;
   font-size: 14px;
+}
+
+p code {
+  background-color: #0d1117;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #cda677;
 }

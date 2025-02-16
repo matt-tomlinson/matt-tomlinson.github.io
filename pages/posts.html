@@ -1,7 +1,9 @@
 <div class="post">
     <h2>Fetching Data with Fetch API</h2>
     <p class="date">February 16, 2025</p>
-    <p>How I am using the Fetch API to load the pages on my site:</p>
+    <p>I decided to dynamically load HTML content into my site using the <code>fetch()</code> API. 
+        When a header link is clicked, the corresponding HTML page is fetched <code>/pages/${pageId}.html</code> and the content is inserted into body. 
+        After the content is loaded, syntax highlighting is reapplied to any code blocks within the new content.</p>
     <pre><code>
 fetch(`/pages/${pageId}.html`).then((response) => response.text()).then((data) => {
     document.getElementById("page-header").innerHTML = `> ${pageId}`;
