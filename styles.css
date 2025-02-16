@@ -62,16 +62,10 @@ footer {
 }
 
 .post h2 {
-  color: #333;
+  color: #ffffff;
 }
 
 .post .date {
-  color: #666;
+  color: #979797;
   font-size: 14px;
-}
-
-.post pre {
-  background: #282c34;
-  padding: 10px;
-  border-radius: 5px;
 }

@@ -12,6 +12,7 @@ function initializeHeaderLinks() {
             headerLinks[i].addEventListener("click", function (event) {
                 event.preventDefault();
                 loadPageDataById(headerLinks[i].id);
+                setTimeout(() => { hljs.highlightAll(); }, 20);
             });
         }
     }
